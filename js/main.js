@@ -110,6 +110,7 @@ function preview() {
 
         replaced1 = replaced1.substring(0, indices[i]) + "</span>" +  replaced1.substring(indices[i], replaced1.length);
     }
+    
     document.getElementById("preview").innerHTML = replaced1;
 }
 
