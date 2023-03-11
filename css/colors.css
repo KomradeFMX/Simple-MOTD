@@ -1,0 +1,72 @@
+.color {
+    border-radius: 2.5px;
+    height: 4vh;
+    width: 4vh;
+    margin: 5px;
+}
+
+
+
+.black {
+    background-color: #000000;
+}
+
+.dark-gray {
+    background-color: #555555;
+}
+
+.gray {
+    background-color: #AAAAAA;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.red {
+    background-color: #FF5555;
+}
+
+.dark-red {
+    background-color: #AA0000;
+}
+
+.green {
+    background-color: #55FF55;
+}
+
+.dark-green {
+    background-color: #00AA00;
+}
+
+.aqua {
+    background-color: #55FFFF;
+}
+
+.dark-aqua {
+    background-color: #00AAAA;
+}
+
+.blue {
+    background-color: #5555FF;
+}
+
+.dark-blue {
+    background-color: #0000AA;
+}
+
+.yellow {
+    background-color: #FFFF55;
+}
+
+.gold {
+    background-color: #FFAA00;
+}
+
+.light-purple {
+    background-color: #FF55FF;
+}
+
+.dark-purple {
+    background-color: #AA00AA;
+}

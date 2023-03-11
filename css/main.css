@@ -1,0 +1,50 @@
+@font-face {
+    font-family: oxygen;
+    src: url("../src/fonts/Oxygen-Regular.ttf");
+}
+@font-face {
+    font-family: oxygen_bold;
+    src: url("../src/fonts/Oxygen-Bold.ttf");
+}
+
+@font-face {
+    font-family: monocraft;
+    src: url("../src/fonts/monocraft.ttf");
+}
+
+* {
+    text-decoration: none;
+} 
+
+a {
+    color: azure;
+}
+
+body {
+    background-color: rgb(45, 49, 49);
+    color: azure;
+    font-family: oxygen;
+}
+
+.title {
+    font-size: 3.5vh;
+    font-family: oxygen_bold;
+}
+
+.header-link:hover{
+    transform: scale(2);
+}
+
+.placeholder-bars {
+    width: 1vw;
+}
+
+.THESEPARATOR-1vh {
+    height: 1vh;
+    width: 100%;
+}
+
+.THESEPARATOR-2vh {
+    height: 2vh;
+    width: 100%;
+}

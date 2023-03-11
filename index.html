@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/motd.css">
+        <link rel="stylesheet" href="./css/colors.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- JS -->
+        <script src="./js/main.js"></script>
+        <script src="./js/header-behavior.js"></script>
+        <!-- Title -->
+        <title>Simple MOTD</title>
+    </head>
+    <body>
+        <!-- Hello curious explorer! -->
+
+        <!-- Header -->
+        <header>
+            <div class="header-container" id="nav">
+                <p class="logo title">Simple MOTD</p>
+                <ul class="header-links">
+                    <a href="#"><li class="header-link">About</li></a>
+                    <a href="#"><li class="header-link">How to</li></a>
+                    <a href="#"><li class="header-link">Social</li></a>
+                    <a><li class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></li></a>
+                    <a href="javascript:void(0);" class="icon" onclick="nav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </ul>
+            </div>
+        </header>
+
+        
+        <!-- Main MOTD function -->
+        <section>
+            <div class="motd">
+                <h1 class="title">Minecraft MOTD</h1>
+                <div class="motd-options">
+                    <ul class="options-container flex colorines">
+                        <a onclick="insertItem('&0')"><li class="color black"></li></a>
+                        <a onclick="insertItem('&8')"><li class="color dark-gray"></li></a>
+                        <a onclick="insertItem('&7')"><li class="color gray"></li></a>
+                        <a onclick="insertItem('&f')"><li class="color white"></li></a>
+                        <a onclick="insertItem('&c')"><li class="color red"></li></a>
+                        <a onclick="insertItem('&a')"><li class="color green"></li></a>
+                        <a onclick="insertItem('&b')"><li class="color aqua"></li></a>
+                        <a onclick="insertItem('&3')"><li class="color dark-aqua"></li></a>
+                        <a onclick="insertItem('&9')"><li class="color blue"></li></a>
+                        <a onclick="insertItem('&1')"><li class="color dark-blue"></li></a>
+                        <a onclick="insertItem('&a')"><li class="color green"></li></a>
+                        <a onclick="insertItem('&2')"><li class="color dark-green"></li></a>
+                        <a onclick="insertItem('&e')"><li class="color yellow"></li></a>
+                        <a onclick="insertItem('&6')"><li class="color gold"></li></a>
+                        <a onclick="insertItem('&d')"><li class="color light-purple"></li></a>
+                        <a onclick="insertItem('&5')"><li class="color dark-purple"></li></a>
+                    </ul>
+
+                    <div class="THESEPARATOR-1vh"></div>
+
+                    <ul class="options-container flex desktop desktop-text">
+                        <div class="placeholder-bars"></div>
+                        <a onclick="insertItem('&l')"><li class="option"><b>Bold</b></li></a>
+                        <a onclick="insertItem('&o')"><li class="option"><i>Italics</i></li></a>
+                        <a onclick="insertItem('&n')"><li class="option"><u>Underline</u></li></a>
+                        <a onclick="insertItem('&m')"><li class="option"><s>Strikethrough</s></li></a>
+                        <a onclick="insertItem('&k')"><li class="option">Obfuscated</li></a>
+                        <a onclick="insertItem('&r')"><li class="option">Reset</li></a>
+                        <div class="placeholder-bars"></div>
+                        
+                    </ul>
+                    <div class="options-container grid mobile-text">
+                        <div class="placeholder-bars"></div>
+                        <a onclick="insertItem('&l')"><div class="option"><b>B</b></div></a>
+                        <a onclick="insertItem('&o')"><div class="option"><i>I</i></div></a>
+                        <a onclick="insertItem('&n')"><div class="option"><u>U</u></div></a>
+                        <a onclick="insertItem('&m')"><div class="option"><s>S</s></div></a>
+                        <a onclick="insertItem('&k')"><div class="option">O</div></a>
+                        <a onclick="insertItem('&r')"><div class="option">R</div></a>
+                        <div class="placeholder-bars"></div>
+                    </div>
+                </div>
+
+                <div class="THESEPARATOR-2vh"></div>
+
+                <textarea spellcheck="false" cols="45" maxlength="90" oninput="preview()" rows="2" zplaceholder="Your MOTD!" id="textarea"></textarea>
+
+                <h1>Preview:</h1>
+                <div class="motd-preview">
+                    <a onclick="copy()"><div id="copy">Copy</div></a>
+                    <p id="preview"></p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
