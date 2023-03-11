@@ -4,10 +4,10 @@
         <!-- Meta -->
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/src/favicon/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./src/favicon/site.webmanifest">
         <!-- CSS -->
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/header.css">
@@ -26,9 +26,9 @@
         <!-- Header -->
         <header>
             <div class="header-container" id="nav">
-                <p class="logo title">Simple MOTD</p>
+                <p class="logo title" onclick="location.href='index.html'">Simple MOTD</p>
                 <ul class="header-links">
-                    <li class="header-link"><a class="link-hover" href="#">About</a></li>
+                    <li class="header-link"><a class="link-hover" href="./about.html">About</a></li>
                     <li class="header-link"><a class="link-hover" href="#">How to</a></li>
                     <li class="header-link"><a class="link-hover" href="#">Social</a></li>
                     <a><li class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></li></a>
@@ -39,9 +39,9 @@
             </div>
             
             <div id="reactive-nav" style="display: none;">
-                <a href="#"><div class="header-link">About</div></a>
-                <a href="#"><div class="header-link">How to</div></a>
-                <a href="#"><div class="header-link">Social</div></a>
+                <li class="header-link"><a class="link-hover" href="./about.html">About</a></li>
+                <li class="header-link"><a class="link-hover" href="#">How to</a></li>
+                <li class="header-link"><a class="link-hover" href="#">Social</a></li>
                 <a><div class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></div></a>
             </div>
         </header>
@@ -51,7 +51,12 @@
         <section>
             <div class="motd">
                 <h1>Welcome to Simple MOTD!</h1>
-                <p>Thanks for using my MOTD creator<br>This MOTD creator is a simple way to make your Minecraft MOTDs for your server</p>
+                <p>Thanks for using my MOTD creator :D<br>
+                    This page allows you to easily create MOTDs or colored text for your Minecraft servers.<br><br>
+                    This is a project I had in mind and really wanted to start, it´s still very unfinished but I hope that with time I can turn it into a good MOTD creation page (free of ads &/or tracking of course).<br><br>
+                    If you have any suggestions or have something to share, feel free to hit me up on my <a href="https://twitter.com/Komrade_RTX"><span style="color: rgb(113, 250, 255);"">Twitter</span></a>!<br><br>
+                    With love, <i>Komrade_RTX</i>
+                </p>
             </div>
         </section>
     </body>

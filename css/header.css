@@ -40,6 +40,10 @@ header {
     vertical-align: middle;
 }
 
+.link-hover {
+  text-decoration: none;
+}
+
 .link-hover:hover {
   border-radius: 5px;
   background-color: rgba(251, 207, 255, 0.95);
