@@ -2,18 +2,20 @@ header {
     min-height: 10vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
-    background: rgba(74, 246, 181, 0.19);
+    background: rgba(252, 173, 239, 0.87);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.7px);
     -webkit-backdrop-filter: blur(5.7px);
-    border: 1px solid rgba(74, 246, 181, 0.35);
+    border: 1px solid rgba(250, 189, 255, 0.89);
 }
 
 .header-container {
-    height: 100%;
+    height: 10vh;
     width: 97%;
 
     overflow: hidden;
@@ -38,6 +40,15 @@ header {
     vertical-align: middle;
 }
 
+.link-hover:hover {
+  border-radius: 5px;
+  background-color: rgba(251, 207, 255, 0.95);
+  -webkit-box-shadow: 0px 0px 0px 10px rgba(251, 207, 255, 0.95);
+  -moz-box-shadow: 0px 0px 0px 10px rgba(251, 207, 255, 0.95);
+  box-shadow: 0px 0px 0px 10px rgba(251, 207, 255, 0.95);
+  transition: linear 0.1s;
+}
+
 .pfp {
     border-radius: 50%;
     height: 6vh;
@@ -50,8 +61,27 @@ header {
     display: none;
   }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+    #reactive-nav {
+      height: 8vh;
+      width: 97%;
+      display: none;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1vh;
+
+      background: rgba(119, 119, 119, 0.205);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5.7px);
+      -webkit-backdrop-filter: blur(5.7px);
+      border: 1px solid rgba(250, 189, 255, 0.89);
+    }
+    .pfp {
+      margin-right: 20px;
+  }
+  
     .header-container a {display: none;}
     .header-container a.icon {
       float: right;

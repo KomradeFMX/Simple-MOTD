@@ -1,8 +1,13 @@
 function nav() {
-  var x = document.getElementById("nav");
-  if (x.className === "header-container") {
-    x.className += " responsive";
+  if(document.getElementById("reactive-nav").style.display === "flex") {
+    document.getElementById("reactive-nav").style.display = "none";
   } else {
-    x.className = "header-container";
+    document.getElementById("reactive-nav").style.display = "flex";
   }
 }
+
+window.onresize = function onresize() {
+  if(window.innerWidth > 600) {
+    document.getElementById("reactive-nav").style.display = "none";
+  }
+};

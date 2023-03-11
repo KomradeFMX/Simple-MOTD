@@ -31,10 +31,6 @@ body {
     font-family: oxygen_bold;
 }
 
-.header-link:hover{
-    transform: scale(2);
-}
-
 .placeholder-bars {
     width: 1vw;
 }

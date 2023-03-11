@@ -23,14 +23,21 @@
             <div class="header-container" id="nav">
                 <p class="logo title">Simple MOTD</p>
                 <ul class="header-links">
-                    <a href="#"><li class="header-link">About</li></a>
-                    <a href="#"><li class="header-link">How to</li></a>
-                    <a href="#"><li class="header-link">Social</li></a>
+                    <li class="header-link"><a class="link-hover" href="#">About</a></li>
+                    <li class="header-link"><a class="link-hover" href="#">How to</a></li>
+                    <li class="header-link"><a class="link-hover" href="#">Social</a></li>
                     <a><li class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></li></a>
                     <a href="javascript:void(0);" class="icon" onclick="nav()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </ul>
+            </div>
+            
+            <div id="reactive-nav" style="display: none;">
+                <a href="#"><div class="header-link">About</div></a>
+                <a href="#"><div class="header-link">How to</div></a>
+                <a href="#"><div class="header-link">Social</div></a>
+                <a><div class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></div></a>
             </div>
         </header>
 
