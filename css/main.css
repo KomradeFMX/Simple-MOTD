@@ -12,10 +12,6 @@
     src: url("../src/fonts/monocraft.ttf");
 }
 
-* {
-    text-decoration: none;
-} 
-
 a {
     color: azure;
 }

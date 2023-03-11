@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/motd.css">
+        <link rel="stylesheet" href="./css/colors.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- JS -->
+        <script src="./js/main.js"></script>
+        <script src="./js/header-behavior.js"></script>
+        <!-- Title -->
+        <title>Simple MOTD</title>
+    </head>
+    <body>
+        <!-- Hello curious explorer! -->
+
+        <!-- Header -->
+        <header>
+            <div class="header-container" id="nav">
+                <p class="logo title">Simple MOTD</p>
+                <ul class="header-links">
+                    <li class="header-link"><a class="link-hover" href="#">About</a></li>
+                    <li class="header-link"><a class="link-hover" href="#">How to</a></li>
+                    <li class="header-link"><a class="link-hover" href="#">Social</a></li>
+                    <a><li class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></li></a>
+                    <a href="javascript:void(0);" class="icon" onclick="nav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </ul>
+            </div>
+            
+            <div id="reactive-nav" style="display: none;">
+                <a href="#"><div class="header-link">About</div></a>
+                <a href="#"><div class="header-link">How to</div></a>
+                <a href="#"><div class="header-link">Social</div></a>
+                <a><div class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></div></a>
+            </div>
+        </header>
+
+        
+        <!-- Main MOTD function -->
+        <section>
+            <div class="motd">
+                <h1>Welcome to Simple MOTD!</h1>
+                <p>Thanks for using my MOTD creator</p>
+            </div>
+        </section>
+    </body>
+</html>
