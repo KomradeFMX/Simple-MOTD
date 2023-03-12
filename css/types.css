@@ -1,0 +1,32 @@
+.motd-types {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.type-input {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.input-fork {
+    height: 100%;
+    width: 6ch;
+
+    text-align: center;
+
+    border: 1px solid azure;
+    border-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(34, 34, 34);
+}
+
+
+#vanilla {
+    color: #AAAAAA;
+}
+#proxy {
+    color: #AAAAAA;
+}

@@ -5,7 +5,8 @@ section {
 }
 
 .motd {
-    width: 70%;
+    margin-top: 1vh;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -14,6 +15,14 @@ section {
 .motd-options {
     display: flex;
     flex-direction: column;
+}
+
+.option:active {
+    margin-top: 1px;
+}
+
+.color:active {
+    margin-bottom: 1px;
 }
 
 .options-container {
@@ -31,7 +40,7 @@ section {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.7px);
     -webkit-backdrop-filter: blur(5.7px);
-    border: 1px solid rgb(112, 112, 112);
+    border:1px solid rgba(242, 215, 255, 0.685);
 }
 
 .colorines {
@@ -56,22 +65,32 @@ section {
 
 textarea {
     width: 100%;
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(53, 29, 29, 0);
+    border:1px solid rgba(242, 215, 255, 0.685);
     border-radius: 10px;
     color: azure;
     font-size: 4vh;
     resize: none;
 }
 
+
+
+.textarea:focus {
+    outline: none !important;
+    border:1px solid rgb(231, 178, 255);
+    box-shadow: 0 0 10px #719ECE;
+  }
+
+
+
 .motd-preview {
-    border-radius: 10px;
-    color: azure;
-    font-family: monocraft;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    min-height: 17vh;
-    width: 100%;
+
+    color: azure;
+    font-family: monocraft;
+    border-radius: 10px;
     background-color: rgb(29, 29, 29); 
 }
 
@@ -81,15 +100,29 @@ textarea {
     width: fit-content;
     background-color: #555555;
     border-radius: 10px;
-    margin: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: 5px;
+    padding: 5px;
+}
+.copy-dummy {
+    width: fit-content;
+    color: #00000000;
+    background-color: #00000000;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: 5px;
     padding: 5px;
 }
 #preview {
     width: 100%;
-    display: table-cell;
-    vertical-align: middle;
+    background-color: #00000000;
+    padding: 0;
+    border: 0;
     color: #AAAAAA;
-    font-size: 4vh;
+    font-family: monocraft;
+    font-size: 3vh;
     white-space: pre;
 }
 
@@ -106,6 +139,7 @@ textarea {
         display: flex;
         flex-direction: column;
     }
+    
     .mobile-colors {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

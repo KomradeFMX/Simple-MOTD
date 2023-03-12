@@ -55,6 +55,7 @@ header {
 
 .pfp {
     border-radius: 50%;
+    border: 3px solid #ffffff50;
     height: 6vh;
 }
 

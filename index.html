@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/motd.css">
         <link rel="stylesheet" href="./css/colors.css">
+        <link rel="stylesheet" href="./css/types.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- JS -->
         <script src="./js/main.js"></script>
@@ -29,8 +30,8 @@
                 <p class="logo title">Simple MOTD</p>
                 <ul class="header-links">
                     <li class="header-link"><a class="link-hover" href="./about.html">About</a></li>
-                    <li class="header-link"><a class="link-hover" href="#">How to</a></li>
-                    <li class="header-link"><a class="link-hover" href="#">Social</a></li>
+                    <li class="header-link"><a class="link-hover" href="./howto.html">How to</a></li>
+                    <li class="header-link"><a class="link-hover" href="./social.html">Social</a></li>
                     <a><li class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></li></a>
                     <a href="javascript:void(0);" class="icon" onclick="nav()">
                         <i class="fa fa-bars"></i>
@@ -40,8 +41,8 @@
             
             <div id="reactive-nav" style="display: none;">
                 <div class="header-link"><a class="link-hover" href="./about.html">About</a></div>
-                <div class="header-link"><a class="link-hover" href="#">How to</a></div>
-                <div class="header-link"><a class="link-hover" href="#">Social</a></div>
+                <div class="header-link"><a class="link-hover" href="./howto.html">How to</a></div>
+                <div class="header-link"><a class="link-hover" href="./social.html">Social</a></div>
                 <a><div class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></div></a>
             </div>
         </header>
@@ -98,13 +99,31 @@
 
                 <div class="THESEPARATOR-2vh"></div>
 
-                <textarea spellcheck="false" cols="45" maxlength="90" oninput="preview()" rows="2" placeholder="Your MOTD!" id="textarea"></textarea>
+                <textarea spellcheck="false" cols="45" oninput="preview()" rows="2" placeholder="Your MOTD!" id="textarea"></textarea>
 
                 <h1>Preview:</h1>
                 <div class="motd-preview">
                     <a onclick="copy()"><div id="copy">Copy</div></a>
-                    <p id="preview"></p>
+                    <div id="preview"></div>
+                    <script src="./js/OBFUSCATION.js"></script>
+                    <div class="copy-dummy">Copy</div>
                 </div>
+
+                <!-- MOTD options -->
+                <div class="motd-types">
+                    <span>Vanilla / Spigot | <span style="color: pink">server.properties</span>:</span>
+                    <div class="type-input">
+                        <input value="motd=" class="input-fork" disabled>
+                        <input readonly id="vanilla" onclick="copyVanilla()">
+                    </div>
+
+                    <span>Proxies | <span style="color: pink">config.yml</span>:</span>
+                    <div class="type-input">
+                        <input value="motd:" class="input-fork" disabled>
+                        <input readonly id="proxy" onclick="copyProxy()">
+                    </div>
+                </div>
+
             </div>
         </section>
     </body>

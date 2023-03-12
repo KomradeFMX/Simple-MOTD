@@ -18,7 +18,7 @@
         <script src="./js/main.js"></script>
         <script src="./js/header-behavior.js"></script>
         <!-- Title -->
-        <title>About SMOTD</title>
+        <title>How to MOTD</title>
     </head>
     <body>
         <!-- Hello curious explorer! -->
@@ -28,8 +28,8 @@
             <div class="header-container" id="nav">
                 <p class="logo title" onclick="location.href='index.html'">Simple MOTD</p>
                 <ul class="header-links">
-                    <li class="header-link"><a class="link-hover"">About</a></li>
-                    <li class="header-link"><a class="link-hover" href="./howto.html">How to</a></li>
+                    <li class="header-link"><a class="link-hover" href="./about.html">About</a></li>
+                    <li class="header-link"><a class="link-hover">How to</a></li>
                     <li class="header-link"><a class="link-hover" href="./social.html">Social</a></li>
                     <a><li class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></li></a>
                     <a href="javascript:void(0);" class="icon" onclick="nav()">
@@ -39,23 +39,31 @@
             </div>
             
             <div id="reactive-nav" style="display: none;">
-                <div class="header-link"><a class="link-hover">About</a></div>
-                <div class="header-link"><a class="link-hover" href="./howto.html">How to</a></div>
+                <div class="header-link"><a class="link-hover" href="./about.html">About</a></div>
+                <div class="header-link"><a class="link-hover">How to</a></div>
                 <div class="header-link"><a class="link-hover" href="./social.html">Social</a></div>
                 <a><div class="header-link"><img class="pfp" src="https://cdn.discordapp.com/avatars/504655450655162379/36e041ae774e4bc5a097d27a52bb6c06.webp?size=80"></div></a>
             </div>
         </header>
 
         
-        <!-- About -->
+        <!-- How to -->
         <section>
             <div class="motd">
-                <h1>Welcome to Simple MOTD!</h1>
-                <p>Thanks for using my MOTD creator :D<br>
-                    This page allows you to easily create MOTDs or colored text for your Minecraft servers.<br><br>
-                    This is a project I had in mind and really wanted to start, it´s still very unfinished but I hope that with time I can turn it into a good MOTD creation page (free of ads &/or tracking of course).<br><br>
-                    If you have any suggestions or have something to share, feel free to hit me up on my <a href="https://twitter.com/Komrade_RTX"><span style="color: rgb(113, 250, 255);"">Twitter</span></a>!<br><br>
-                    With love, <i>Komrade_RTX</i>
+                <h1 class="title">How to apply MOTDs in Minecraft</h1>
+                <p>There are two ways of applying your MOTD to your Minecraft server, let´s see...</p>
+                <h1 style="margin-bottom: 0cap;">Vanilla / Spigot</h1>
+                <p>
+                    If you are just running a vanilla or Spigot based minecraft server, go to your server folder and search for a file named <span style="color: pink">server.properties</span><br>
+                    Among all the options you will find one named <span style="color: pink">motd=</span>, just paste your MOTD there and done!<br>
+                    It should look something like this: <span style="color: pink">motd= \u00A7c\u00A7oYour incredible\u00A7r\n\u00A7dMinecraft server</span>
+                </p>
+
+                <h1 style="margin-bottom: 0cap;">Proxies [Bungeecord | Velocity | etc]</h1>
+                <p>
+                    If your server run through a proxy like <span style="color: pink">bungeecord</span> or <span style="color: pink">velocity</span>, go to your proxy folder and search for your <span style="color: pink">config.yml</span><br>
+                    Search for an option named <span style="color: pink">motd:</span>, and like in the vanilla/spigot section just paste your MOTD there. Restart your proxy and done!<br>
+                    It should look something like this: <span style="color: pink">motd: &c&oYour incredible\u00A7r\n&dMinecraft server</span>
                 </p>
             </div>
         </section>

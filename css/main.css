@@ -13,6 +13,9 @@
 }
 
 a {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     color: azure;
 }
 
@@ -22,9 +25,22 @@ body {
     font-family: oxygen;
 }
 
+input {
+    width: 100%;
+    border: 1px solid azure;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(34, 34, 34);
+    padding: 5px;
+    font-size: 2.5vh;
+}
+
 .title {
     font-size: 3.5vh;
     font-family: oxygen_bold;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .placeholder-bars {
